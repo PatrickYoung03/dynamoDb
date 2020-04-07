@@ -1,6 +1,8 @@
 const uuid = require("uuid");
 const AWS = require("aws-sdk");
 
+const dynamoDb = new AWS.DynamoDB.DocumentClient();
+
 module.exports.get = async event => {
   return {
     statusCode: 200,

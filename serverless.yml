@@ -128,6 +128,8 @@ functions:
       - http:
           path: users/create
           method: post
+          cors: true
+          intergration: LAMBDA
 
   update:
     handler: todos/update.update
@@ -135,6 +137,8 @@ functions:
       - http:
           path: users/{id}
           method: patch
+          cors: true
+          intergration: LAMBDA
 
   delete:
     handler: todos/delete.delete
@@ -142,6 +146,8 @@ functions:
       - http:
           path: users/{id}
           method: delete
+          cors: true
+          intergration: LAMBDA
 
   get:
     handler: todos/get.get
@@ -149,6 +155,8 @@ functions:
       - http:
           path: users/{id}
           method: get
+          cors: true
+          intergration: LAMBDA
 #    Define function environment variables here
 #    environment:
 #      variable2: value2
